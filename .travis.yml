@@ -6,7 +6,14 @@ jdk:
 addons:
   sonarcloud:
     organization: "rolling_tools"
-    
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'
+
 script:
-  - ./gradlew check 
-  - sonar-scanner
+  - ./gradlew check
+  - ./gradlew sonarqube
