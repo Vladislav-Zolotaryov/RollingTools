@@ -1,2 +1,2 @@
 language: java
-scirpt: ./gradlew check
+scirpt: chmod +x gradlew && ./gradlew check
