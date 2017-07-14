@@ -1,2 +1,9 @@
 language: java
-scirpt: chmod +x gradlew && ./gradlew check
+
+addons:
+  sonarcloud:
+    organization: "rolling_tools"
+    
+script:
+  - ./gradlew check 
+  - sonar-scanner
