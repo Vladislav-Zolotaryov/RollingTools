@@ -2,7 +2,7 @@ package com.rolling.software.tools;
 
 public class BooleanHelper {
 
-  public boolean condition;
+  private boolean condition;
 
   public BooleanHelper(boolean condition) {
     this.condition = condition;
