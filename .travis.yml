@@ -1,0 +1,2 @@
+language: java
+scirpt: chmod +x gradlew && ./gradlew check
