@@ -20,9 +20,4 @@ class LangTest extends Specification {
     true  | false
     false | true
   }
-
-  def "When static method should create BooleanHelper"() {
-    expect:
-    when(true) instanceof BooleanHelper
-  }
 }

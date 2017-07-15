@@ -1,11 +1,16 @@
 package com.rolling.software.tools
 
-import static com.rolling.software.tools.Lang.*
+import static com.rolling.software.tools.BooleanHelper.*
 import static org.junit.Assert.*
 
 import spock.lang.Specification
 
 class BooleanHelperTest extends Specification {
+  def "When static method should create BooleanHelper"() {
+    expect:
+    when(true) instanceof BooleanHelper
+  }
+
   def "Boolean helper not method should invert logical parameter"() {
     expect:
     when(param).not() == expected

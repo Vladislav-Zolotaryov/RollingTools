@@ -24,4 +24,8 @@ public class BooleanHelper {
     return !condition;
   }
 
+  public static BooleanHelper when(boolean parameter) {
+    return new BooleanHelper(parameter);
+  }
+
 }
