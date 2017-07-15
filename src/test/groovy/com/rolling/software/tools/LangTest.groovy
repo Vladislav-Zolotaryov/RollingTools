@@ -8,10 +8,7 @@ import spock.lang.Specification
 class LangTest extends Specification {
   def "Private constructor coverage hack"() {
     expect:
-    def constructor = Lang.class.getDeclaredConstructor()
-    constructor.setAccessible(true)
-    def instance = constructor.newInstance()
-    instance instanceof Lang
+    TestUtils.testPrivateConstructor(Lang.class)
   }
 
   def "Not static method should invert logical parameter"() {
