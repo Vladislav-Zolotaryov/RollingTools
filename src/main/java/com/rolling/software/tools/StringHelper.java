@@ -1,8 +1,11 @@
 package com.rolling.software.tools;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class StringHelper {
+public class StringHelper implements Serializable {
+
+  private static final long serialVersionUID = 5155053672315085174L;
 
   private final String template;
 

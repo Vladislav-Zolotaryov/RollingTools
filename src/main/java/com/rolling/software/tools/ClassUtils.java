@@ -2,7 +2,9 @@ package com.rolling.software.tools;
 
 import static com.rolling.software.tools.StringHelper.str;
 
-public class ClassHelper {
+public final class ClassUtils {
+
+  private ClassUtils() {}
 
   public static <T> T cast(Object object, Class<T> classy) throws ClassCastException {
     if (classy.isInstance(object)) {
