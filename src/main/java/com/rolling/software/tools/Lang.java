@@ -8,7 +8,7 @@ public final class Lang {
     return !condition;
   }
 
-  public static BooleanHelper of(boolean parameter) {
+  public static BooleanHelper when(boolean parameter) {
     return new BooleanHelper(parameter);
   }
 

@@ -16,8 +16,12 @@ public class BooleanHelper {
     return new BooleanHelper(condition || chain);
   }
 
-  public boolean val() {
+  public boolean is() {
     return condition;
+  }
+
+  public boolean not() {
+    return !condition;
   }
 
 }
