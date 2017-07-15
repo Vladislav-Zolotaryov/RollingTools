@@ -56,4 +56,14 @@ class BooleanHelperTest extends Specification {
     false | true  | true  | false
     false | false | false | false
   }
+
+  def "Equal state boolean helper should be equal"() {
+    expect:
+    when(true) == when(true)
+  }
+
+  def "Different state boolean helper should not be equal"() {
+    expect:
+    when(true) != when(false)
+  }
 }

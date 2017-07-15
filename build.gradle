@@ -16,14 +16,14 @@ apply plugin: 'idea'
 apply plugin: 'jacoco'
 apply plugin: "org.sonarqube"
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 repositories {
     jcenter()
 }
 
 dependencies {
-    implementation 'com.google.guava:guava:21.0'
-	implementation 'org.slf4j:slf4j-api:1.7.24'
-
 	testImplementation'org.spockframework:spock-core:1.1-groovy-2.4'
 }
 

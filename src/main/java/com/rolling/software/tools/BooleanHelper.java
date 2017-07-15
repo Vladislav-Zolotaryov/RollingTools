@@ -28,4 +28,31 @@ public class BooleanHelper {
     return new BooleanHelper(parameter);
   }
 
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + (condition ? 1231 : 1237);
+    return result;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    BooleanHelper other = (BooleanHelper) obj;
+    if (condition != other.condition)
+      return false;
+    return true;
+  }
+
+  @Override
+  public String toString() {
+    return "BooleanHelper [condition=" + condition + "]";
+  }
+
 }
