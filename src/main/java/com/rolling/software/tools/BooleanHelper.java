@@ -45,7 +45,7 @@ public class BooleanHelper {
     if (getClass() != obj.getClass())
       return false;
     BooleanHelper other = (BooleanHelper) obj;
-    return condition != other.condition;
+    return condition == other.condition;
   }
 
   @Override
